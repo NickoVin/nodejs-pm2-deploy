@@ -12,6 +12,7 @@ import { validateUserBody, validateAuthentication } from '../middlewares/validat
 
 const router = Router();
 
+// TODO: Удалить после ревью
 router.get('/crash-test', () => {
   setTimeout(() => {
     throw new Error('Сервер сейчас упадёт');
